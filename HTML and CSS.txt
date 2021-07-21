@@ -1,0 +1,32 @@
+### for over lay in a background image and cleare text
+=>
+.apoinmentParent{
+    margin-bottom: 100px;
+}
+.apoinmentParent{
+    background-image: url('../../../images/make-appoinment.png');
+    position: relative;
+    background-position: 0 -400px;
+    height:380px;
+    top: 100px;
+}
+.apoinmentParent::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgb(36, 41, 73);
+    top: 0;
+    opacity: 0.9;
+}
+.doctor_img{
+    height: 530px;
+   transform:translateY(-149px);
+}
+.test1{
+    z-index: 1;
+}
+.appointment-text {
+    width:600px;
+}
